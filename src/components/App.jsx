@@ -6,10 +6,10 @@ import { Profile } from './Profile/Profile';
 import { Statistic } from './Statistics/Statistic';
 import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
-import { GlogalStyled } from 'styles/global.styles';
+import { GlobalStyled } from 'styles/global.styles';
 export const App = () => {
   return (
-    <GlogalStyled
+    <GlobalStyled
     // style={{
     //   height: '100vh',
     //   display: 'flex',
@@ -23,6 +23,6 @@ export const App = () => {
       <Statistic title="Upload stats" stats={data} />
       <FriendList persons={friends} />
       <TransactionHistory transactions={transactions} />
-    </GlogalStyled>
+    </GlobalStyled>
   );
 };
