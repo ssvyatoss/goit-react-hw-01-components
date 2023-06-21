@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { StatItem, StatList, StatSection } from "./Statistics.styles";
 
 export const Statistic = ({ title, stats }) => {
@@ -18,3 +19,10 @@ export const Statistic = ({ title, stats }) => {
     </StatSection>
   );
 };
+
+Statistic.propTypes = {
+  stats: PropTypes.shape({
+    label: PropTypes.string,
+    percentage: PropTypes.number,
+  })
+}
